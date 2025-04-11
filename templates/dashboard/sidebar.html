@@ -1,0 +1,38 @@
+
+{% load static %}
+<!-- MENU SIDEBAR-->
+<aside class="menu-sidebar d-none d-lg-block">
+    <div class="logo">
+        <a href="#">
+            <svg width="200px" height="50px" viewBox="0 0 200 50" xmlns="http://www.w3.org/2000/svg">
+              <text x="10" y="35" font-family="'Arial', sans-serif" font-size="30" fill="#4A90E2" font-weight="bold">
+                  Dilkash
+              </text>
+            </svg>
+
+        </a>
+    </div>
+    <div class="menu-sidebar__content js-scrollbar1">
+        <nav class="navbar-sidebar">
+            <ul class="list-unstyled navbar__list">
+                <li class="active">
+                    <a href="{% url 'main_dashboard' %}"><i class="fas fa-tachometer-alt"></i>Dashboard</a>
+                </li>
+                <li>
+                    <a href="{% url 'category_list' %}"><i class="fas fa-chart-bar"></i>Categories</a>
+                </li>
+                <li>
+                    <a href="{% url 'product_list' %}"><i class="fas fa-chart-bar"></i>Products</a>
+                </li>
+                <li>
+                    <a href="{% url 'user_list' %}"><i class="fas fa-chart-bar"></i>Users</a>
+                </li>
+                <li>
+                    <a href="{% url 'order_list' %}"><i class="fas fa-chart-bar"></i>Orders</a>
+                </li>
+
+            </ul>
+        </nav>
+    </div>
+</aside>
+<!-- END MENU SIDEBAR-->
